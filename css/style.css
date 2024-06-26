@@ -1,0 +1,67 @@
+/* Font Sizes */
+:root {
+  --font-size-h1: 32px;
+  --font-size-h2: 28px;
+  --font-size-h3: 24px;
+  --font-size-body-large: 18px;
+  --font-size-body: 16px;
+  --font-size-small: 14px;
+}
+
+/* Spacing */
+:root {
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 40px;
+}
+
+/* Buttons */
+:root {
+  --button-padding: 10px 20px;
+  --button-border-radius: 5px;
+  --button-primary-bg: #007bff;
+  --button-primary-color: #ffffff;
+  --button-secondary-bg: #6c757d;
+  --button-secondary-color: #ffffff;
+}
+
+/* Colors */
+:root {
+  --color-primary: #007bff;
+  --color-secondary: #6c757d;
+  --color-bg: #ffffff;
+  --color-text: #333333;
+  --color-text-light: #ffffff;
+  --color-border: #dddddd;
+}
+
+/* fonts */
+:root {
+    --font-h1:
+    --font-h2:
+    --font-h3:
+    --font-p:
+    --font-link:
+    --font-tags:  
+}
+
+.button {
+  padding: var(--button-padding);
+  border-radius: var(--button-border-radius);
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-size-body);
+}
+
+.button-primary {
+  background-color: var(--button-primary-bg);
+  color: var(--button-primary-color);
+}
+
+.button-secondary {
+  background-color: var(--button-secondary-bg);
+  color: var(--button-secondary-color);
+}
