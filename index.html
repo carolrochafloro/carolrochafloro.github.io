@@ -2,179 +2,327 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="./js/main.js"></script>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script defer src="./js/bootstrap.js"></script>
+    <script defer src="./js/jquery-3.7.1.min.js"></script>
+    <script defer src="./slick/slick.min.js"></script>
+    <script defer src="/js/main.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./slick/slick.css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="icon"
+      href="./assets/type-16-svgrepo-com.svg"
+      type="image/x-icon"
+    />
     <title>Carol Flóro</title>
   </head>
+
   <body>
     <header>
-      <nav>
-        <a href="">Sobre mim</a>
-        <a href="">Projetos</a>
-        <a href="">Experiência</a>
-        <a href="">Currículo</a>
+      <nav
+        class="navbar navbar-expand-lg"
+        style="border-bottom: 1px solid #3b0273"
+      >
+        <div class="container-fluid mb-4" style="margin-top: 1rem">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="./assets//type-16-svgrepo-com.svg"
+              alt="favicon"
+              width="30"
+              height="24"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#about" style="color: #9530d9"
+                  >Sobre mim</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="#projects"
+                  style="color: #9530d9"
+                  >Projetos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="#experience"
+                  style="color: #9530d9"
+                  >Experiência</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="#studies"
+                  style="color: #9530d9"
+                  >Formação</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
       <section id="about">
-        <div class="section" id="1st">
-          <div>
-            <img src="" alt="foto minha" />
-            <h1>Carol Flóro</h1>
-            <h2>Fullstack developer</h2>
-          </div>
-          <div>
-            <p>E-mail</p>
-            <a href="">LinkedIn</a>
-            <a href="">Github</a>
-            <a href="">Currículo</a>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
-              bibendum neque egestas congue quisque. Laoreet non curabitur
-              gravida arcu ac tortor dignissim convallis aenean. Condimentum
-              lacinia quis vel eros donec ac odio tempor orci. Nunc consequat
-              interdum varius sit. Augue eget arcu dictum varius. Egestas purus
-              viverra accumsan in nisl nisi scelerisque. Hendrerit dolor magna
-              eget est lorem ipsum dolor sit.
-            </p>
-            <p>
-              Adipiscing bibendum est ultricies integer. Nulla pharetra diam sit
-              amet nisl suscipit adipiscing. In tellus integer feugiat
-              scelerisque varius morbi enim nunc. Neque egestas congue quisque
-              egestas diam in arcu. Fames ac turpis egestas maecenas pharetra
-              convallis posuere morbi. Faucibus scelerisque eleifend donec
-              pretium. Et sollicitudin ac orci phasellus egestas tellus rutrum
-              tellus pellentesque.
-            </p>
+        <div class="container mb-4">
+          <div class="row align-itens-center">
+            <div
+              class="col-sm-4 d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                src="./assets/WhatsApp Image 2024-05-13 at 17.40.32 (1) (1).jpeg"
+                alt="foto minha"
+                class="rounded-circle w-75"
+              />
+            </div>
+            <div class="col-sm-8 d-flex flex-column justify-content-center">
+              <div class="row">
+                <div>
+                  <h1>Carol Flóro</h1>
+                  <h2>Fullstack developer</h2>
+                </div>
+                <div class="col-sm d-flex flex-column justify-content-center">
+                  <p>
+                    Olá! Sou a Carol, uma desenvolvedora de software fullstack.
+                    Tenho 33 anos e sou graduanda em Análise e Desenvolvimento
+                    de Sistemas. Resolver um problema pra mim é como passar de
+                    fase em um jogo e tenho certeza de que a tecnologia pode
+                    transformar o mundo para melhor.
+                  </p>
+                  <p>
+                    <span class="highlight-text"
+                      >Tenho experiência em .NET 8, Node.js e Angular,
+                      PostgreSQL e SQL Server.</span
+                    >
+                    Além das competências técnicas, acredito fortemente no poder
+                    da colaboração e no trabalho em equipe. Durante minha
+                    trajetória profissional aprendi a ser comunicativa,
+                    organizada e resiliente. Gosto de me sentir desafiada e
+                    prezo por trabalhar em projetos nos quais acredito.
+                  </p>
+                </div>
+                <div>
+                  <ul class="list-unstyled d-flex gap-3">
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/in/carolina-rocha-floro/"
+                        target="_blank"
+                        ><img src="./assets/linkedin.svg" alt="linkedin"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/carolrochafloro"
+                        target="_blank"
+                        ><img src="./assets/github.svg" alt="github"
+                      /></a>
+                    </li>
+                    <li class="d-flex">
+                      <a href="/"
+                        ><img src="./assets/envelope-fill.svg" alt="e-mail"
+                      /></a>
+                      <p class="mb-0 ms-2" id="email">
+                        carolinarochaf@hotmail.com
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="projects">
-        <ul>
-          <li>
-            <div class="card">
-              <h3>Título do projeto</h3>
-              <img src="" alt="img projeto" />
-              <p>
-                Adipiscing bibendum est ultricies integer. Nulla pharetra diam
-                sit amet nisl suscipit adipiscing. In tellus integer feugiat
-                scelerisque varius morbi enim nunc.
-              </p>
-              <a href="">Repo</a>
-              <div class="tags">
-                <ul>
-                  <li>Tag 1</li>
-                  <li>Tag 2</li>
-                  <li>Tag 3</li>
-                </ul>
+        <div class="container mb-6">
+          <div class="row align-items-start">
+            <!-- ============ CARROSSEL =========== -->
+            <div
+              class="col-sm-8 d-flex flex-column justify-content-center multiple-items"
+            >
+              <div class="card me-4">
+                <img src="./assets/image.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Projeto 1</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+              <div class="card me-4">
+                <img src="./assets/image.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Projeto 2</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+              <div class="card me-4">
+                <img src="./assets/image.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Projeto 3</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+              <div class="card me-4">
+                <img src="./assets/image.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Projeto 4</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
               </div>
             </div>
-          </li>
-          <li>
-            <div class="card">
-              <h3>Título do projeto</h3>
-              <img src="" alt="img projeto" />
-              <p>
-                Adipiscing bibendum est ultricies integer. Nulla pharetra diam
-                sit amet nisl suscipit adipiscing. In tellus integer feugiat
-                scelerisque varius morbi enim nunc.
-              </p>
-              <a href="">Repo</a>
-              <div class="tags">
-                <ul>
-                  <li>Tag 1</li>
-                  <li>Tag 2</li>
-                  <li>Tag 3</li>
-                </ul>
-              </div>
+            <!-- =========== DECOR ========== -->
+            <div class="col-sm-4 d-flex flex-column">
+              <p class="decor-text-side">&lt;/&gt;</p>
             </div>
-          </li>
-          <li>
-            <div class="card">
-              <h3>Título do projeto</h3>
-              <img src="" alt="img projeto" />
-              <p>
-                Adipiscing bibendum est ultricies integer. Nulla pharetra diam
-                sit amet nisl suscipit adipiscing. In tellus integer feugiat
-                scelerisque varius morbi enim nunc.
-              </p>
-              <a href="">Repo</a>
-              <div class="tags">
-                <ul>
-                  <li>Tag 1</li>
-                  <li>Tag 2</li>
-                  <li>Tag 3</li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
 
       <section id="experience">
-        <h2>Experiência profissional</h2>
-        <div>
-          <h3>Nome da empresa</h3>
-          <p>01/2022 a 12/2023</p>
-          <p>
-            Adipiscing bibendum est ultricies integer. Nulla pharetra diam sit
-            amet nisl suscipit adipiscing. In tellus integer feugiat scelerisque
-            varius morbi enim nunc.
-          </p>
-        </div>
-        <div>
-          <h3>Nome da empresa</h3>
-          <p>01/2024 até o momento</p>
-          <p>
-            Adipiscing bibendum est ultricies integer. Nulla pharetra diam sit
-            amet nisl suscipit adipiscing. In tellus integer feugiat scelerisque
-            varius morbi enim nunc.
-          </p>
+        <div class="container mb-4">
+          <div class="row align-items-top">
+            <div class="col-sm-4 d-flex flex-column align-items-center">
+              <p class="decor-text-side">{xp}</p>
+            </div>
+            <div class="col-sm-4 d-flex flex-column">
+              <p>
+                Iniciei minha vida profissional como microempresária, sócia em
+                um restaurante, onde atuei durante 10 anos.
+              </p>
+              <p>
+                Em busca de novos desafios, vendi a empresa e passei a atuar
+                como representante comercial autônoma, já visando a transição de
+                carreira para a área de desenvolvimento de software, que concluí
+                em 2024 com meu primeiro emprego na área.
+              </p>
+            </div>
+            <div class="col-sm-4 d-flex flex-column">
+              <div class="row">
+                <ul class="list-unstyled">
+                  <li>
+                    <h6>
+                      Grupo FCamara
+                      <span style="color: #e1caf9; font-weight: normal"
+                        >04/2024 até o momento</span
+                      >
+                    </h6>
+                    <p>
+                      Desenvolvedora fullstack. Atuação com .NET 8, Angular e
+                      Node.js
+                    </p>
+                  </li>
+                  <li>
+                    <h6>
+                      GRF Distribuição
+                      <span style="color: #e1caf9; font-weight: normal"
+                        >09/2022 a 10/2023</span
+                      >
+                    </h6>
+                    <p>Representante comercial autônoma</p>
+                  </li>
+                  <li>
+                    <h6>
+                      Frango na Brasa de Friburgo
+                      <span style="color: #e1caf9; font-weight: normal"
+                        >01/2012 a 06/2022</span
+                      >
+                    </h6>
+                    <p>
+                      Sócia, responsável pela administração, gestão de equipe e
+                      atendimento ao público.
+                    </p>
+                  </li>
+                  <!-- <a href="">Ver mais (abrir modal)</a> -->
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="studies">
-        <div>
-          <h2>Formação acadêmica</h2>
-          <div>
-            <h3>Análise e desenvolvimento de sistemas</h3>
-            <p>Previsão de conclusão: 06/2025</p>
-            <p>Senac</p>
-          </div>
-        </div>
-        <div>
-          <h2>Cursos e certificados</h2>
-          <div>
-            <h3>Nome do curso</h3>
-            <a href="">Link do certificado</a>
-            <p>Carga horária</p>
-            <p>Senac</p>
-          </div>
-          <div>
-            <h3>Nome do curso</h3>
-            <a href="">Link do certificado</a>
-            <p>Carga horária</p>
-            <p>Senac</p>
-          </div>
-          <div>
-            <h3>Nome do curso</h3>
-            <a href="">Link do certificado</a>
-            <p>Carga horária</p>
-            <p>Senac</p>
+        <div class="container">
+          <div class="row align-items-top">
+            <div class="col-sm-4 d-flex flex-column">
+              <div class="row">
+                <h6>Graduação</h6>
+                <p style="margin-bottom: 0">
+                  Análise e Desenvolvimento de Sistemas
+                </p>
+                <p style="margin-bottom: 0; font-weight: bold">SENAC-SP</p>
+                <p>Previsão de conclusão: junho de 2025</p>
+              </div>
+            </div>
+            <div class="col-sm-4 d-flex flex-column">
+              <div class="row">
+                <ul class="list-unstyled">
+                  <li>
+                    <h6>Desenvolvimento de Software com foco em back-end</h6>
+                    <p style="margin-bottom: 0">
+                      <span style="font-weight: bolder">Cubos Academy</span>
+                      500h
+                    </p>
+                    <p>
+                      Desenvolvimento de API REST em Node.js com PostgreSQL.
+                    </p>
+                  </li>
+                  <li>
+                    <h6>Programa de Formação Season 5</h6>
+                    <p style="margin-bottom: 0">
+                      <span style="font-weight: bolder">Orange Juice</span>
+                      60h
+                    </p>
+                    <p>
+                      Hackathon realizado como processo seletivo para a vaga de
+                      desenvolvedora fullstack na FCamara. Desenvolvimento de
+                      API Rest em Node.js, integração com PostgreSQL, AWS-S3 e
+                      deploy.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4 d-flex flex-column">
+              <p class="decor-text-side">.edu</p>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer>
-      <a href="">Back to top</a>
-      <p>© 2024 Carolina Rocha Flóro. Todos os direitos reservados.</p>
+
+    <footer class="py-4 text-center" style="border-top: 1px solid #3b0273">
+      <div class="container">
+        <p>© 2024 Carolina Rocha Flóro. Todos os direitos reservados.</p>
+      </div>
     </footer>
   </body>
 </html>

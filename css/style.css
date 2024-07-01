@@ -1,67 +1,54 @@
-/* Font Sizes */
-:root {
-  --font-size-h1: 32px;
-  --font-size-h2: 28px;
-  --font-size-h3: 24px;
-  --font-size-body-large: 18px;
-  --font-size-body: 16px;
-  --font-size-small: 14px;
+body {
+  background-color: #000;
 }
 
-/* Spacing */
-:root {
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 24px;
-  --spacing-xl: 32px;
-  --spacing-xxl: 40px;
+p {
+  color: #f5eefc;
 }
 
-/* Buttons */
-:root {
-  --button-padding: 10px 20px;
-  --button-border-radius: 5px;
-  --button-primary-bg: #007bff;
-  --button-primary-color: #ffffff;
-  --button-secondary-bg: #6c757d;
-  --button-secondary-color: #ffffff;
+h1 {
+  color: #9530d9;
+}
+h2,
+h6 {
+  color: #a34fdb;
 }
 
-/* Colors */
-:root {
-  --color-primary: #007bff;
-  --color-secondary: #6c757d;
-  --color-bg: #ffffff;
-  --color-text: #333333;
-  --color-text-light: #ffffff;
-  --color-border: #dddddd;
+.card-title {
+  color: #a34fdb;
 }
 
-/* fonts */
-:root {
-    --font-h1:
-    --font-h2:
-    --font-h3:
-    --font-p:
-    --font-link:
-    --font-tags:  
+#email {
+  font-weight: bold;
+  color: #f5eefc;
 }
 
-.button {
-  padding: var(--button-padding);
-  border-radius: var(--button-border-radius);
-  border: none;
-  cursor: pointer;
-  font-size: var(--font-size-body);
+.highlight-text {
+  font-weight: bold;
+  color: #a34fdb;
+}
+.decor-text-side {
+  background-image: linear-gradient(to right, #9530d9, #3b0273);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 10rem;
+  flex-grow: 1;
+  display: flex;
+  text-align: center;
+  align-self: center;
 }
 
-.button-primary {
-  background-color: var(--button-primary-bg);
-  color: var(--button-primary-color);
+.card {
+  width: 8rem;
+  background-color: #1b0035;
 }
 
-.button-secondary {
-  background-color: var(--button-secondary-bg);
-  color: var(--button-secondary-color);
+.navbar {
+  margin-bottom: 2rem;
+  height: 3rem;
+}
+
+a {
+  text-decoration: none;
 }
