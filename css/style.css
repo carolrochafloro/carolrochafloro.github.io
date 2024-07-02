@@ -170,3 +170,7 @@ button {
   font-family: var(--font-highlight);
   font-weight: var(--font-weight-b);
 }
+
+nav {
+  border-bottom: var(--border);
+}
