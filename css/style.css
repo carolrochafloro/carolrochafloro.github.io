@@ -1,6 +1,7 @@
 :root {
   --bg-color: #000;
   --border: 1px solid #3b0273;
+  --gradient: linear-gradient(to right, #9530d9, #3b0273);
 }
 
 body {
@@ -13,9 +14,12 @@ p {
 }
 
 h1 {
+  background-image: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-family: 'IBM Plex Mono';
   font-weight: bolder;
-  color: #9530d9;
   margin-left: 0;
   text-align: left;
 }
@@ -46,7 +50,7 @@ h2 {
   color: #a34fdb;
 }
 .decor-text-side {
-  background-image: linear-gradient(to right, #9530d9, #3b0273);
+  background-image: var(--gradient);
   font-family: 'IBM Plex Mono';
   -webkit-background-clip: text;
   background-clip: text;
