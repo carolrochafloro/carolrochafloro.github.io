@@ -52,6 +52,10 @@ h6 {
   margin-bottom: 0.5rem;
 }
 
+.xp p {
+  margin-bottom: 0;
+}
+
 .card {
   width: 8rem;
   background-color: var(--border);
