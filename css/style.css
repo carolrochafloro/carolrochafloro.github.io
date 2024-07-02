@@ -96,6 +96,11 @@ h5 {
   }
 }
 
+@media (max-width: 1200px) {
+  .decor-text-side {
+    font-size: 4rem;
+  }
+}
 .xp {
   border: var(--border);
   border-radius: --border-radius-lg;
