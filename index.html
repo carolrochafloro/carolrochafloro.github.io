@@ -121,7 +121,7 @@
                         <a href="mailto:exemplo@email.com"
                           ><img src="./assets/envelope-fill.svg" alt="e-mail"
                         /></a>
-                        <p class="mb-0 ms-2" id="email">
+                        <p class="mb-0 ms-2" id="email" class="text-link">
                           carolinarochaf@hotmail.com
                         </p>
                       </li>
@@ -159,7 +159,11 @@
             <div
               class="col-sm-8 d-flex flex-column justify-content-center multiple-items"
             >
-              <div class="card me-4">
+              <div
+                class="card me-4"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-proj-1"
+              >
                 <img
                   src="./assets/projeto-1.jpg"
                   class="card-img-top"
@@ -174,7 +178,11 @@
                   </p>
                 </div>
               </div>
-              <div class="card me-4">
+              <div
+                class="card me-4"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-proj-2"
+              >
                 <img
                   src="./assets/projeto-2.jpg"
                   class="card-img-top"
@@ -189,7 +197,11 @@
                   </p>
                 </div>
               </div>
-              <div class="card me-4">
+              <div
+                class="card me-4"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-proj-3"
+              >
                 <img
                   src="./assets/projeto-3.jpg"
                   class="card-img-top"
@@ -204,7 +216,11 @@
                   </p>
                 </div>
               </div>
-              <div class="card me-4">
+              <div
+                class="card me-4"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-proj-4"
+              >
                 <img
                   src="./assets/projeto-4.jpg"
                   class="card-img-top"
@@ -227,6 +243,145 @@
           </div>
         </div>
       </section>
+
+      <!-- ========== MODAIS ========== -->
+
+      <div class="modal" id="modal-proj-1" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Form - controle de mensagens</h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                Aplicação desenvolvida em ASP.NET 8 utilizando o padrão MVC. Ao
+                se cadastrar e logar no sistema, o usuário pode receber uma URL
+                personalizada que direciona para uma página de contato. A
+                mensagem será enviada por e-mail através do Sendgrid.
+              </p>
+              <p>
+                A solução contém dois projetos: um MVC e um worker. Os dados do
+                contato são enviados para o RabbitMQ e o worker consome a
+                mensagem, realiza o envio e atualiza o banco de dados conforme o
+                status de envio do e-mail.
+              </p>
+              <p>
+                A aplicação consome a API do Bitly para gerar uma URL encurtada.
+              </p>
+              <a
+                href="https://github.com/carolrochafloro/services-email-rabbitmq"
+                target="_blank"
+                ><img src="./assets/github.svg" alt="github" /><span
+                  class="text-link mb-0 ms-2"
+                  >Repositório</span
+                ></a
+              >
+            </div>
+            <div class="modal-footer">
+              <button class="my-btn" data-bs-dismiss="modal">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-proj-2" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Task Timer</h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                API REST com operações CRUD desenvolvida em ASP.NET 8 para
+                registro de tarefas e o tempo de duração, retornando a média de
+                duração de cada tarefa.
+              </p>
+              <p>
+                Foi utilizado PostgreSQL como banco de dados e o EF Core como
+                ORM, e o Microsoft Identity para gerenciar a autenticação de
+                usuários.
+              </p>
+              <a
+                href="https://github.com/carolrochafloro/task-timer"
+                target="_blank"
+                ><img src="./assets/github.svg" alt="github" /><span
+                  class="text-link mb-0 ms-2"
+                  >Repositório</span
+                ></a
+              >
+            </div>
+            <div class="modal-footer">
+              <button class="my-btn" data-bs-dismiss="modal">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-proj-3" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Orange Portfolio - backend</h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                API REST desenvolvida em equipe para o hackathon do Programa de
+                Formação - Season 5 da Orange Juice, que foi a 3ª etapa do
+                processo de seleção para o Programa de Formação como trainee na
+                FCamara.
+              </p>
+              <p>
+                Foi utilizado Node.js, PostgreSQL, Express.js e Sequelize como
+                ORM. A aplicação conta com integração com o AWS S3 para inclusão
+                e exclusão de imagens.
+              </p>
+              <a
+                href="https://github.com/carolrochafloro/backend-orange-portolio"
+                target="_blank"
+                ><img src="./assets/github.svg" alt="github" /><span
+                  class="text-link mb-0 ms-2"
+                  >Repositório</span
+                ></a
+              >
+            </div>
+            <div class="modal-footer">
+              <button class="my-btn" data-bs-dismiss="modal">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-proj-4" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">FisioFluxo</h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                API REST para gestão de atendimentos e previsão de receita para
+                uma fisioterapeuta autônoma, em desenvolvimento para prática com
+                banco de dados não relacional.
+              </p>
+              <p>
+                Está sendo desenvolvida em Node.js com Nest, além de MongoDB e
+                Mongoose.
+              </p>
+              <a
+                href="https://github.com/carolrochafloro/fisio-fluxo"
+                target="_blank"
+                ><img src="./assets/github.svg" alt="github" /><span
+                  class="text-link mb-0 ms-2"
+                  >Repositório</span
+                ></a
+              >
+            </div>
+            <div class="modal-footer">
+              <button class="my-btn" data-bs-dismiss="modal">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section id="experience">
         <div class="container mb-4">
