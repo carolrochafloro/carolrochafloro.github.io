@@ -1,17 +1,17 @@
 body {
   background-color: #000;
+  font-family: 'IBM Plex Sans';
 }
 
 p {
   color: #f5eefc;
 }
 
-h1 {
-  color: #9530d9;
-}
 h2,
 h6 {
   color: #a34fdb;
+  font-family: 'IBM Plex Mono';
+  font-weight: bold;
 }
 
 .card-title {
@@ -29,6 +29,7 @@ h6 {
 }
 .decor-text-side {
   background-image: linear-gradient(to right, #9530d9, #3b0273);
+  font-family: 'IBM Plex Mono';
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -58,4 +59,25 @@ a {
   padding: 0.25rem 0.5rem;
   border: 1px solid #3b0273;
   border-radius: 4px;
+}
+
+header a {
+  font-family: 'IBM Plex Mono';
+}
+
+#about h1 {
+  font-family: 'IBM Plex Mono';
+  font-weight: bolder;
+  color: #9530d9;
+}
+
+#about h2 {
+  font-family: 'IBM Plex Mono';
+  font-size: 1.5rem;
+}
+
+.time {
+  color: #e1caf9;
+  font-weight: normal;
+  font-size: 0.75rem;
 }
