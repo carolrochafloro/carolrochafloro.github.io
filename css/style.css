@@ -12,11 +12,24 @@ p {
   color: #f5eefc;
 }
 
+h1 {
+  font-family: 'IBM Plex Mono';
+  font-weight: bolder;
+  color: #9530d9;
+  margin-left: 0;
+  text-align: left;
+}
+
 h2,
 h6 {
   color: #a34fdb;
   font-family: 'IBM Plex Mono';
   font-weight: bold;
+}
+h2 {
+  color: #3b0273;
+  margin-left: 0;
+  text-align: left;
 }
 
 .card-title {
@@ -91,12 +104,6 @@ a {
 
 header a {
   font-family: 'IBM Plex Mono';
-}
-
-#about h1 {
-  font-family: 'IBM Plex Mono';
-  font-weight: bolder;
-  color: #9530d9;
 }
 
 #about h2 {
