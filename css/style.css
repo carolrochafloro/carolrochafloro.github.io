@@ -52,3 +52,10 @@ h6 {
 a {
   text-decoration: none;
 }
+
+.tag {
+  color: #f5eefc;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #3b0273;
+  border-radius: 4px;
+}
