@@ -83,6 +83,19 @@ h5 {
   align-self: center;
 }
 
+@media (max-width: 768px) {
+  .decor-text-side {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .decor-text-side::after {
+    font-size: 2rem;
+    margin-left: 0.5rem;
+  }
+}
+
 .xp {
   border: var(--border);
   border-radius: --border-radius-lg;
