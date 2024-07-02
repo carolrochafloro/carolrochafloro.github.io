@@ -1,5 +1,10 @@
+:root {
+  --bg-color: #000;
+  --border: 1px solid #3b0273;
+}
+
 body {
-  background-color: #000;
+  background-color: var(--bg-color);
   font-family: 'IBM Plex Sans';
 }
 
@@ -57,7 +62,7 @@ a {
 .tag {
   color: #f5eefc;
   padding: 0.25rem 0.5rem;
-  border: 1px solid #3b0273;
+  border: var(--border);
   border-radius: 4px;
 }
 
