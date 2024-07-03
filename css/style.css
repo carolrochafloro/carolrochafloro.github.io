@@ -1,5 +1,6 @@
 :root {
   --bg-color: #000;
+  --bg-img: linear-gradient(to right, #16012c, var(--bg-color), #16012c);
   --border: 1px solid var(--dark-purple);
   --text-color: #f0e1ff;
   --highlight-color: #a836f5;
@@ -17,6 +18,7 @@
 
 body {
   background-color: var(--bg-color);
+  background-image: var(--bg-img);
   font-family: var(--font-text);
 }
 
