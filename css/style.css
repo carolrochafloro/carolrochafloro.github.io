@@ -198,7 +198,6 @@ button {
 
 button:hover {
   color: var(--hover-color) !important;
-  font-size: 1.1rem !important;
 }
 svg:hover path {
   fill: var(--hover-color) !important;
