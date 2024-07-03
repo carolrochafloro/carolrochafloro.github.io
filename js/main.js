@@ -1,5 +1,6 @@
 $(document).ready(function () {
-  $('.multiple-items').slick({
+  $('.slick-carousel').slick({
+    infinite: false,
     slidesToShow: 2,
     slidesToScroll: 1,
     swipeToSlide: true,
@@ -13,7 +14,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
           dots: true,
         },
       },
@@ -22,7 +22,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
         },
       },
       {
@@ -30,53 +29,55 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
         },
       },
     ],
   });
 });
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   const clickableCards = document.querySelectorAll('.card-clickable');
+document.addEventListener('DOMContentLoaded', function () {
+  const clickableCards = document.querySelectorAll('.card-clickable');
 
-//   let startX;
-//   let startY;
-//   let isSwiping = false;
+  let startX;
+  let startY;
+  let isSwiping = false;
 
-//   clickableCards.forEach((card) => {
-//     card.addEventListener('mousedown', function (event) {
-//       console.log('mousedown');
-//       startX = event.clientX;
-//       startY = event.clientY;
-//       isSwiping = false;
+  clickableCards.forEach((card) => {
+    card.addEventListener('mousedown', function (event) {
+      event.preventDefault();
+      console.log('mousedown');
+      startX = event.clientX;
+      startY = event.clientY;
+      isSwiping = false;
 
-//       // Adiciona eventos ao document
-//       document.addEventListener('mousemove', onMouseMove);
-//       document.addEventListener('mouseup', onMouseUp);
-//       console.log('mouseup');
-//     });
+      // Adiciona eventos ao document
+      document.addEventListener('mousemove', onMouseMove);
+      document.addEventListener('mouseup', onMouseUp);
+    });
 
-//     function onMouseMove(event) {
-//       const dx = Math.abs(event.clientX - startX);
-//       const dy = Math.abs(event.clientY - startY);
-//       console.log(`DX: ${dx}`);
-//       console.log(`Dy: ${dy}`);
+    function onMouseMove(event) {
+      event.preventDefault();
+      const dx = Math.abs(event.clientX - startX);
+      const dy = Math.abs(event.clientY - startY);
 
-//       if (dx > 5 || dy > 5) {
-//         isSwiping = true;
-//       }
-//     }
+      if (dx > 10 || dy > 10) {
+        isSwiping = true;
+      }
+    }
 
-//     function onMouseUp(event) {
-//       document.removeEventListener('mousemove', onMouseMove);
+    function onMouseUp(event) {
+      document.removeEventListener('mousemove', onMouseMove);
+      document.removeEventListener('mouseup', onMouseUp);
 
-//       if (!isSwiping) {
-//         event.preventDefault();
-//         const target = card.getAttribute('data-bs-target');
-//         const modal = new bootstrap.Modal(document.querySelector(target));
-//         modal.show();
-//       }
-//     }
-//   });
-// });
+      if (!isSwiping) {
+        console.log('mouseup');
+        console.log(isSwiping);
+        event.preventDefault();
+        const target = card.getAttribute('data-bs-target');
+        const modal = new bootstrap.Modal(document.querySelector(target));
+        modal.show();
+        document.removeEventListener('mousemove', onMouseMove);
+      }
+    }
+  });
+});

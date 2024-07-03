@@ -95,11 +95,12 @@ h5 {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 10rem;
+  font-size: 8rem;
   flex-grow: 1;
   display: flex;
   text-align: center;
   align-self: center;
+  justify-self: center;
 }
 
 @media (max-width: 768px) {
@@ -143,11 +144,14 @@ h5 {
 }
 
 .card {
-  width: 8rem;
-  background-color: var(--border);
+  background-color: transparent;
   border: var(--border);
   cursor: pointer;
   color: var(--text-color);
+}
+
+.card:hover {
+  background-color: #16012c;
 }
 
 .card-title {
