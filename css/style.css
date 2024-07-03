@@ -43,6 +43,12 @@ header a:hover {
 
 a {
   text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  columns: var(--hover-color);
+  font-size: 1.1rem;
 }
 
 h1 {
@@ -54,7 +60,14 @@ h1 {
   margin-bottom: 0;
 }
 
-h2,
+h2 {
+  font-family: var(--font-highlight);
+  font-size: 1.5rem;
+  color: var(--highlight-color);
+  margin-left: 0;
+  text-align: left;
+}
+
 h5,
 h6 {
   color: var(--highlight-color);
@@ -62,23 +75,8 @@ h6 {
   font-weight: var(--font-weight-b);
 }
 
-h2 {
-  color: var(--highlight-color);
-  margin-left: 0;
-  text-align: left;
-}
-
 h5 {
   font-size: 1rem;
-}
-
-.card-title {
-  color: var(--highlight-color);
-  font-weight: var(--font-weight-b);
-}
-
-.text-link {
-  color: var(--text-color);
 }
 
 #email {
@@ -122,6 +120,7 @@ h5 {
     font-size: 4rem;
   }
 }
+
 .xp {
   border: var(--border);
   border-radius: --border-radius-lg;
@@ -133,15 +132,27 @@ h5 {
   margin-bottom: 0;
 }
 
+.xp span {
+  font-weight: normal;
+  font-size: 0.75rem;
+}
+
 .company {
   font-family: var(--font-highlight);
   font-weight: var(--font-weight-b);
 }
+
 .card {
   width: 8rem;
   background-color: var(--border);
   border: var(--border);
   cursor: pointer;
+  color: var(--text-color);
+}
+
+.card-title {
+  color: var(--highlight-color);
+  font-weight: var(--font-weight-b);
 }
 
 .card-img-top {
@@ -157,20 +168,10 @@ h5 {
   border-radius: var(--border-radius-lg);
 }
 
-#about h2 {
-  font-family: var(--font-highlight);
-  font-size: 1.5rem;
-}
-
-.time {
-  color: var(--text-color);
-  font-weight: normal;
-  font-size: 0.75rem;
-}
-
 footer {
   border: var(--border);
 }
+
 .modal {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -183,7 +184,7 @@ footer {
 button {
   background-color: transparent;
   border-radius: var(--border-radius-lg);
-  color: #a836f5;
+  color: var(--highlight-color);
   cursor: pointer;
   border: var(--border);
   border-radius: var(--border-radius-lg);
@@ -191,6 +192,12 @@ button {
   font-weight: var(--font-weight-b);
 }
 
+button:hover {
+  color: var(--hover-color) !important;
+  font-size: 1.1rem !important;
+}
 svg:hover path {
   fill: var(--hover-color) !important;
+  width: 17;
+  height: 17;
 }
