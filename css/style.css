@@ -5,7 +5,7 @@
   --text-color: #f0e1ff;
   --highlight-color: #a836f5;
   --dark-purple: #2e015a;
-  --hover-color: #b74ffc;
+  --hover-color: #bf5ffe;
   --gradient: linear-gradient(
     to right,
     var(--highlight-color),
@@ -39,6 +39,7 @@ header a {
 header a:hover {
   color: var(--hover-color) !important;
   font-size: 1.1rem;
+  font-weight: bolder;
 }
 
 a {
@@ -47,8 +48,7 @@ a {
 }
 
 a:hover {
-  columns: var(--hover-color);
-  font-size: 1.1rem;
+  color: var(--hover-color);
 }
 
 h1 {
@@ -202,6 +202,4 @@ button:hover {
 }
 svg:hover path {
   fill: var(--hover-color) !important;
-  width: 18;
-  height: 18;
 }
