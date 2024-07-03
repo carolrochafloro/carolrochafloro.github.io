@@ -181,16 +181,16 @@ footer {
 }
 
 .modal-content {
-  background-color: var(--bg-color);
+  background-image: var(--bg-img);
+
   border: var(--border);
 }
 
 button {
   background-color: transparent;
-  border-radius: var(--border-radius-lg);
   color: var(--highlight-color);
   cursor: pointer;
-  border: var(--border);
+  border: none;
   border-radius: var(--border-radius-lg);
   font-family: var(--font-highlight);
   font-weight: var(--font-weight-b);
@@ -202,6 +202,6 @@ button:hover {
 }
 svg:hover path {
   fill: var(--hover-color) !important;
-  width: 17;
-  height: 17;
+  width: 18;
+  height: 18;
 }
