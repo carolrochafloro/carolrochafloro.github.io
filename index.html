@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script defer src="./js/bootstrap.min.js"></script>
     <script defer src="./js/jquery-3.7.1.min.js"></script>
     <script defer src="./slick/slick.min.js"></script>
@@ -84,7 +85,9 @@
               <div class="row">
                 <div>
                   <h1>Carol Flóro</h1>
-                  <h2>Fullstack developer</h2>
+                  <h2 id="typestring">
+                    <span id="typed"></span>
+                  </h2>
                 </div>
                 <div class="col-sm d-flex flex-column justify-content-center">
                   <div>
@@ -553,5 +556,15 @@
         </p>
       </div>
     </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        var typed = new Typed('#typed', {
+          strings: ['Fullstack developer', '.NET', 'Angular', 'SQL Server'],
+          typeSpeed: 50, // velocidade de digitação em milissegundos
+          backSpeed: 50, // velocidade de exclusão em milissegundos
+          loop: true, // se deve repetir após terminar
+        });
+      });
+    </script>
   </body>
 </html>
