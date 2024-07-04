@@ -24,6 +24,16 @@ body {
   color: var(--text-color);
 }
 
+.navbar-toggler {
+  --bs-navbar-color: var(--highlight-color);
+  --bs-navbar-toggler-border-color: transparent;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 nav {
   border-bottom: var(--border);
   margin-bottom: 2rem;
