@@ -22,6 +22,7 @@ body {
   background-image: var(--bg-img);
   font-family: var(--font-text);
   color: var(--text-color);
+  cursor: default;
 }
 
 a {
@@ -190,7 +191,6 @@ h5 {
   padding: 0.25rem 0.5rem;
   border: var(--border);
   border-radius: var(--border-radius-lg);
-  cursor: default;
 }
 
 .tag:hover {
