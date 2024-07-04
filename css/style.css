@@ -43,6 +43,15 @@ a:hover {
   box-shadow: none;
 }
 
+.navbar-collapse {
+  background-image: linear-gradient(
+    to right,
+    rgba(22, 1, 44, 0.7),
+    rgba(0, 0, 0, 0.7),
+    rgba(22, 1, 44, 0.7)
+  );
+}
+
 nav {
   border-bottom: var(--border);
   margin-bottom: 2rem;
