@@ -150,6 +150,9 @@ h5 {
   margin-bottom: 0;
 }
 
+.xp:hover {
+  box-shadow: 1px 1px 2px #a836f5;
+}
 .xp span {
   font-weight: normal;
   font-size: 0.75rem;
