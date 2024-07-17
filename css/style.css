@@ -149,10 +149,12 @@ h5 {
 
 .xp p {
   margin-bottom: 0;
+  transition: 0.5s;
 }
 
 .xp:hover {
   box-shadow: 1px 1px 2px #a836f5;
+  transition: 0.5s;
 }
 .xp span {
   font-weight: normal;
@@ -169,6 +171,7 @@ h5 {
   border: var(--border);
   cursor: pointer;
   color: var(--text-color);
+  transition: 0.5s;
 }
 
 .card:hover {
