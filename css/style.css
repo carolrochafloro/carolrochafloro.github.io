@@ -72,7 +72,19 @@ header a {
 }
 
 header a:hover {
-  color: var(--hover-color) !important;
+  color: var(--white) !important;
+}
+
+a {
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+
+  align-items: center;
+
+  svg {
+    margin-right: 6px;
+  }
 }
 
 h1 {
@@ -137,6 +149,12 @@ h5 {
   .decor-text-side::after {
     font-size: 2rem;
     margin-left: 0.5rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
   }
 }
 
